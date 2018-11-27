@@ -1,8 +1,8 @@
 <?php
 if (isset($_POST['login']) && isset($_POST['password'])) {
     if (is_string($_POST['login']) && is_string($_POST['password'])) {
-        setcookie("login",$_POST['login'],time() + 365*24*3600);
-        setcookie("password",$_POST['password'],time() + 365*24*3600, null, null, false, true);
+        setcookie('login', $_POST['login'], time() + 365*24*3600, null, null, false, true);
+        setcookie('password', $_POST['password'], time() + 365*24*3600, null, null, false, true);
         header ('location: exercice_3.php');
     } else {
         $display = 'Vous devez indiquer votre login et mot de passe dans le formulaire';
@@ -32,10 +32,10 @@ and open the template in the editor.
             <form method="post" action="">
                 <p>
                     <label for="login">Login :</label>
-                    <input type="text" name="login" id="login" />
+                    <input type="text" name="login" id="login" required />
                     <br />
                     <label for="password">Mot de passe :</label>
-                    <input type="password" name="password" id="password" />
+                    <input type="password" name="password" id="password" required />
                     <input type="submit" value="Envoyer" />
                 </p>
             </form>

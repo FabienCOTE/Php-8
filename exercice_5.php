@@ -21,7 +21,7 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8" />
         <title>Exercice 5</title>
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <div>
@@ -32,10 +32,10 @@ and open the template in the editor.
             <form method="post" action="">
                 <p>
                     <label for="login">Login :</label>
-                    <input type="text" name="login" id="login" />
+                    <input type="text" name="login" id="login" required />
                     <br />
                     <label for="password">Mot de passe :</label>
-                    <input type="password" name="password" id="password" />
+                    <input type="password" name="password" id="password" required />
                     <input type="submit" value="Envoyer" />
                 </p>
             </form>
